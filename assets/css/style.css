@@ -1,0 +1,65 @@
+/*CSS Customized*/
+/*FONT*/
+@font-face {
+    font-family: 'Object Sans Slanted';
+    src: local('Object Sans Slanted'), local('ObjectSans-Slanted'),
+        url('assets/font/hinted-ObjectSans-Slanted.woff2') format('woff2'),
+        url('assets/font/hinted-ObjectSans-Slanted.woff') format('woff'),
+        url('assets/font/hinted-ObjectSans-Slanted.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Object Sans';
+    src: local('Object Sans Heavy'), local('ObjectSans-Heavy'),
+        url('assets/font/hinted-ObjectSans-Heavy.woff2') format('woff2'),
+        url('assets/font/hinted-ObjectSans-Heavy.woff') format('woff'),
+        url('assets/font/hinted-ObjectSans-Heavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Object Sans';
+    src: local('Object Sans Heavy Slanted'), local('ObjectSans-HeavySlanted'),
+        url('assets/font/hinted-ObjectSans-HeavySlanted.woff2') format('woff2'),
+        url('assets/font/hinted-ObjectSans-HeavySlanted.woff') format('woff'),
+        url('assets/font/hinted-ObjectSans-HeavySlanted.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Object Sans';
+    src: local('Object Sans Regular'), local('ObjectSans-Regular'),
+        url('assets/font/hinted-ObjectSans-Regular.woff2') format('woff2'),
+        url('assets/font/hinted-ObjectSans-Regular.woff') format('woff'),
+        url('assets/font/hinted-ObjectSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*Color*/
+:root {
+    --teste-teste: #546585;
+}
+
+/*All*/
+p, a, h1, h2, h3, h4, h5, h6, span {
+    font-family: 'Object Sans', sans-serif;
+}
+
+p, a, span {
+    font-size: larger;
+}
+
+.required {
+    font-size: 1em;
+    font-weight: 800;
+    color: #ff0000;
+}

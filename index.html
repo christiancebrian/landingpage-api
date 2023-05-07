@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Javascript Data Layer -->
+    <script type="text/javascript">
+        // Serviço para Google Tag Manager ou Google Analytics 4
+        window.dataLayer = window.dataLayer || []; // Verificando se dataLayer já existe e incrementa, caso contrário cria um novo
+        window.dataLayer.push({
+            'event': 'acesso', // Nome do evento
+            'parametro1': 'valor1', // Nome e parametro 1
+            'parametro2': 'valor2', // Nome e parametro 2
+        });
+    </script>
+    <!-- Fim Javascript Data Layer -->
+    <!--Include Google Tag Manager -->
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!--CSS Customized-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Landing Page API</title>
+    <!--Meta de informação-->
+    <meta name="robots" content="all">
+    <meta name="author" content="Christian Cebrian">
+    <meta name="keywords" content="lading page, API, teste, desenvolvimento">
+    <meta property="og:type" content="page">
+    <meta property="og:url" content="https://localhost/landigpage-api/">
+    <meta property="og:title" content="Landing Page API">
+    <meta property="og:image" content="./assets/img/image.jpg">
+    <meta property="og:description" content="Página de teste para formulário de leads com uso de API">
+    <meta property="article:author" content="Christian Cebrian">
+</head>
+
+<body>
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./assets/img/bootstrap-logo.svg" alt="Logo" width="30"
+                        height="24" class="d-inline-block align-text-top">Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link 1</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Menu Suspenso</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Link 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Desativado</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="palavra..." aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Busca</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--Banner Tablet Desktop-->
+        <div id="carouselExampleControls" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/banner1.png" class="d-block w-100" alt="Banner 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/banner2.png" class="d-block w-100" alt="Banner 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/banner3.png" class="d-block w-100" alt="Banner 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Voltar</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+        <!--Banner Mobile-->
+        <div id="carouselExampleControls" class="carousel slide d-block d-md-none " data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/mbanner1.png" class="d-block w-100" alt="Banner 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/mbanner2.png" class="d-block w-100" alt="Banner 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/mbanner3.png" class="d-block w-100" alt="Banner 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Voltar</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <!--Seção 1-->
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <figure class="figure">
+                        <img src="./assets/img/img-800x800.png" class="figure-img img-fluid rounded" alt="Imagem 1">
+                        <figcaption class="figure-caption text-start">Imagem 1</figcaption>
+                    </figure>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h2>Título</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut massa vehicula, aliquet
+                        ligula at, ornare justo. Suspendisse potenti. Curabitur id leo ipsum. In in viverra tortor, a
+                        ornare urna. Proin a metus eros. Donec dignissim nisl in blandit eleifend. Etiam efficitur
+                        aliquet turpis feugiat eleifend. Quisque nisl ipsum, sodales at mi viverra, tincidunt fringilla
+                        ipsum. Etiam placerat nunc non auctor cursus. Sed dapibus metus non molestie condimentum. Nullam
+                        venenatis ultricies enim ut auctor. Etiam in nibh hendrerit nibh vestibulum malesuada. Interdum
+                        et malesuada fames ac ante ipsum primis in faucibus. Nullam dui mi, fringilla nec augue
+                        vestibulum, commodo fermentum tellus.</p>
+                    <p>Vivamus pharetra porttitor luctus. Sed congue mollis consequat. Aenean in tellus in nibh maximus
+                        ullamcorper in eu urna. Nullam eget convallis sapien. Maecenas sem sem, vestibulum in faucibus
+                        ut, dapibus non tellus. Proin bibendum, eros id tincidunt pretium, elit mi ultricies augue, eu
+                        ultrices sapien felis et mauris. Nunc varius tincidunt accumsan. Quisque iaculis vel nulla eget
+                        auctor. Aliquam erat volutpat. Curabitur tempor nibh vitae libero finibus, non pulvinar lorem
+                        mollis.</p>
+                    <p>Integer vel erat in dolor ultricies laoreet. Nunc vehicula risus a lacus volutpat convallis.
+                        Nullam commodo feugiat neque, vitae ullamcorper nulla tristique nec. Vivamus vitae tincidunt
+                        leo, eu porttitor purus. Suspendisse eleifend erat et convallis facilisis. Nunc nec felis quis
+                        orci sollicitudin tempus id at magna. Duis quam purus, faucibus eget ullamcorper a, tempus at
+                        diam. Proin ullamcorper sapien quis leo tincidunt rutrum. Vivamus commodo augue vitae est
+                        facilisis posuere. Etiam sit amet fermentum nisi. Maecenas sodales sem vel libero ullamcorper
+                        tempor. Vestibulum in tincidunt risus.</p>
+                </div>
+            </div>
+        </div>
+        <!--Seção 2-->
+        <div class="container mb-5">
+            <div class="row">
+                <!--Conteudo Formulário-->
+                <div class="col-12 col-md-6">
+                    <h2>Título</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut massa vehicula, aliquet
+                        ligula at, ornare justo. Suspendisse potenti. Curabitur id leo ipsum. In in viverra tortor, a
+                        ornare urna. Proin a metus eros. Donec dignissim nisl in blandit eleifend. Etiam efficitur
+                        aliquet turpis feugiat eleifend. Quisque nisl ipsum, sodales at mi viverra, tincidunt fringilla
+                        ipsum. Etiam placerat nunc non auctor cursus. Sed dapibus metus non molestie condimentum. Nullam
+                        venenatis ultricies enim ut auctor. Etiam in nibh hendrerit nibh vestibulum malesuada. Interdum
+                        et malesuada fames ac ante ipsum primis in faucibus. Nullam dui mi, fringilla nec augue
+                        vestibulum, commodo fermentum tellus.</p>
+                </div>
+                <!--Formulário-->
+                <div id="formulario" class="col-12 col-md-6">
+                    <form method="post" action="envio_ok.php" id="form1">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome <span class="required">*</span></label>
+                            <input type="text" class="form-control" id="name" name="name" autocomplete="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail <span class="required">*</span></label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                aria-describedby="emailHelp" autocomplete="email" required>
+                            <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.
+                            </div>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="aceito" required>
+                            <label class="form-check-label" for="aceito">Aceita os termos de envio?</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="btn1" name="btn1">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid bg-primary">
+            <div class="container px-2 py-5">
+                <div class="row">
+                    <div class="col-12 col-md-3 text-light">
+                        <img src="./assets/img/logo-rodape.png" class="img-fluid rounded-top mx-auto" alt="Logo">
+                    </div>
+                    <div class="col-12 col-md-3 text-light">
+                        <h4>Menu 1</h4>
+                        <ul class="nav justify-content-start flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#" aria-current="page">Link 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Link 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Link 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3 text-light">
+                        <h4>Menu 2</h4>
+                        <ul class="nav justify-content-start flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#" aria-current="page">Link 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Link 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Link 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3 text-light">
+                        <h4>Menu 3</h4>
+                        <ul class="nav justify-content-start flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#" aria-current="page">Link 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Link 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Link 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <copyright>
+                    <div class="row mt-5">
+                        <div class="col-12 text-center text-light">
+                            <i class="fas fa-copyright">© 2023 Copyright Landing Page API - Todos os direitos
+                                reservados.</i>
+                        </div>
+                    </div>
+                </copyright>
+            </div>
+        </div>
+    </footer>
+    <!--Bootstrap Javascript-->
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
